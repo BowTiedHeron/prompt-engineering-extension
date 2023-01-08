@@ -47,10 +47,10 @@ chrome.runtime.onMessage.addListener(
       //   const result = insert(content);
       console.log(content);
 
-      // If something went wrong we want to see a failed status
-      if (!result) {
-        sendResponse({ status: "failed" });
-      }
+      // // If something went wrong we want to see a failed status
+      // if (!result) {
+      //   sendResponse({ status: "failed" });
+      // }
 
       sendResponse({ status: "success" });
     }
@@ -66,10 +66,10 @@ chrome.runtime.onMessage.addListener(
       // Call this insert function
       const result = insert(content);
 
-      // If something went wrong, send a failed status
-      if (!result) {
-        sendResponse({ status: "failed" });
-      }
+      // // If something went wrong, send a failed status
+      // if (!result) {
+      //   sendResponse({ status: "failed" });
+      // }
 
       sendResponse({ status: "success" });
     }
